@@ -130,7 +130,7 @@ callback(const struct sockaddr* from,
 }
 
 int
-main() {
+main(int argc, char* argv[]) {
 	size_t capacity = 2048;
 	void* buffer = 0;
 	void* user_data = 0;
@@ -165,7 +165,7 @@ main() {
 
 	printf("Sending mDNS query\n");
 	if (mdns_query_send(sock, MDNS_RECORDTYPE_PTR,
-	                    MDNS_STRING_CONST("_ssh._tcp.local."),
+	                    MDNS_STRING_CONST("_airplay._tcp.local."),
 	                    buffer, capacity)) {
 		printf("Failed to send mDNS query: %s\n", strerror(errno));
 		goto quit;

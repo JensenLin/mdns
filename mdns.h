@@ -20,6 +20,7 @@
 
 #include <fcntl.h>
 #ifdef _WIN32
+#pragma comment(lib, "ws2_32.lib")
 #include <Winsock2.h>
 #include <Ws2tcpip.h>
 #define strncasecmp _strnicmp
