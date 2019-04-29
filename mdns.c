@@ -162,7 +162,7 @@ main(int argc, char* argv[]) {
 		                              user_data);
 		sleep(1);
 	}
-
+/*
 	printf("Sending mDNS query\n");
 	if (mdns_query_send(sock, MDNS_RECORDTYPE_PTR,
 	                    MDNS_STRING_CONST("_airplay._tcp.local."),
@@ -176,7 +176,7 @@ main(int argc, char* argv[]) {
 		records = mdns_query_recv(sock, buffer, capacity, callback, user_data, 1);
 		sleep(1);
 	}
-
+*/
 quit:
 	free(buffer);
 

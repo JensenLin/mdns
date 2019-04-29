@@ -489,11 +489,10 @@ static const uint8_t mdns_services_query[] = {
 	// No answer, authority or additional RRs
 	0x00, 0x00,
 	0x00, 0x00,
-	0x00, 0x00,
-	// _services._dns-sd._udp.local.
-	0x09, '_', 's', 'e', 'r', 'v', 'i', 'c', 'e', 's',
-	0x07, '_', 'd', 'n', 's', '-', 's', 'd',
-	0x04, '_', 'u', 'd', 'p',
+	0x00, 0x01,
+	// _airplay._tcp.local.
+	0x08, '_', 'a', 'i', 'r', 'p', 'l', 'a', 'y',
+	0x04, '_', 't', 'c', 'p',
 	0x05, 'l', 'o', 'c', 'a', 'l',
 	0x00,
 	// PTR record
